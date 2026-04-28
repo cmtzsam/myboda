@@ -1,3 +1,5 @@
+@use 'extra' as *;
+
 @font-face {
     font-family: 'Never Let Go';
     src: url('../fonts/NeverLetGo.woff2') format('woff2'),
@@ -63,6 +65,7 @@ h2{
     --naranja: #F0A332;
     --rosa: #D79AAE;
     --ink: #1C1410;
+    --white: #ffffff;
 }
 
 html {
@@ -72,6 +75,9 @@ html {
 body {
     font-family: 'Google Sans', sans-serif;
     background: var(--cream);
+    // background: url(/assets/images/fondo-footer.png);
+    // background-position: center;
+    // background-size: cover;    
     color: var(--ink);
     overflow-x: hidden;
 }
@@ -565,7 +571,7 @@ h1 {
     font-family: 'Never Let Go';
     font-size: 36px;
     margin-bottom: 0px;
-    color: var(--rosa);
+    color: var(--naranja);
     line-height: 1;
   }
   img{
@@ -575,10 +581,11 @@ h1 {
   }
 
   p{
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     line-height: 1.75;
-    color: var(--rosa);
+    color: var(--naranja);
+    font-family: "Caveat";
     a{
       color: inherit;
       text-decoration: none;
@@ -648,9 +655,13 @@ h1 {
       position: relative;
       padding: 50px 0;
       h3{
-        font-family: 'Honeybutter';
+        // font-family: 'Honeybutter';
+        font-family: 'Cormorant Garamond';
         font-size: 18px;
         margin-top: 20px;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
       }
       img{
         width: 100%;
@@ -660,6 +671,11 @@ h1 {
           transform: rotate(180deg);
           margin-top: 20px;
         }
+      }
+      p{
+        font-family: "Cormorant Garamond", serif;
+        line-height: 1.5;
+        color: white;
       }
       ul{
         display: flex;
@@ -690,4 +706,16 @@ h1 {
       }
     }
   }
+}
+
+
+.crochete{
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+  &.invertido{
+    transform: rotate(180deg);
+    margin-top: 10px;
+  }  
 }

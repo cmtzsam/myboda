@@ -1,0 +1,207 @@
+
+/* ─── REGALOS ─── */
+.regalos {
+  background: white;
+  padding: 100px 24px;
+  text-align: center;
+  position: relative;
+  .decoracion{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    &.top{
+      top: 10px;
+      left: 10px;
+    }
+    &.end{
+      transform: rotate(180deg);
+      bottom: 10px;
+      right: 10px;
+    }
+    img{
+      display: block;
+      max-width: 100%;
+    }
+  }
+}
+
+.regalos h2 {
+  font-size: clamp(38px, 8vw, 62px);
+  color: var(--dark);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.regalos-body {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(16px, 2vw, 19px);
+  line-height: 2;
+  max-width: 520px;
+  margin: 0 auto 10px;
+  color: var(--dark);
+}
+.regalos{
+  a{
+    display: block;
+    text-decoration: none;
+    border: 0;
+    font-weight: bold;
+    margin: 0;
+    color: var(--rosa);
+    font-size: 32px;
+    font-family: "Never Let Go", cursive;
+    img{
+      margin: 15px auto;
+      fill: var(--rosa);
+    }
+  }  
+}
+
+
+/* ─── RSVP ─── */
+.rsvp-block {
+  background: url(/assets/images/fondo-rsvp.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 24px;
+  text-align: center;
+}
+
+.rsvp-eyebrow {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0.55em;
+  text-transform: uppercase;
+  // color: var(--verde);
+  color: white;
+  margin-bottom: 24px;
+}
+
+.rsvp-heading {
+  font-size: clamp(50px, 10vw, 88px);
+  color: var(--cream);
+  line-height: 1.1;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.rsvp-body {
+  font-family: "Google sans", serif;
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: 2;
+  max-width: 420px;
+  margin: 0 auto 44px;
+  color: var(--cream);
+  // opacity: 0.8;
+}
+
+.btn-rsvp {
+  display: inline-block;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.55em;
+  text-transform: uppercase;
+  color: var(--dark);
+  background: var(--verde);
+  padding: 16px 44px;
+  text-decoration: none;
+  transition: opacity 0.25s;
+}
+
+.btn-rsvp:hover {
+  opacity: 0.8;
+}
+
+/* ─── CIERRE ─── */
+.cierre {
+  background: var(--cream);
+  // background: url(/assets/images/fondo-footer.png);
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 80px;
+}
+
+.cierre-photo {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 56px;
+}
+
+.cierre-photo img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.cierre-row {
+  align-items: center;
+}
+
+.cierre-left {
+  padding-top: 50px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.cierre-eyebrow {
+  font-family: "Honeybutter", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 10px;
+  line-height: 1.5;
+  opacity: 0.5;
+}
+
+.cierre-heading {
+  font-size: clamp(40px, 7vw, 64px);
+  color: var(--dark);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.cierre-dance {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+
+.cierre-sign {
+  font-family: "Never Let Go", cursive;
+  font-size: 28px;
+  color: var(--ink);
+}
+
+.cierre-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.cierre-img {
+  display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 620px) {
+  .cierre-left {
+    padding-bottom: 0;
+  }
+  .cierre-right {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 24px;
+  }
+  .cierre-heading {
+    font-size: 44px;
+  }
+}
